@@ -7,20 +7,59 @@
 }
 
 
+
 /* COMMON */
 
+
+
 /* UTILITIES */
+.flex-container{
+    display: flex;
+}
+
+.w-33{
+    width: calc(100% / 3);
+}
+
+.large-container{   
+    width: 70%;
+
+    /* debug */
+    background-color: #9A9631;
+    height: 100%;
+}
+
+.m-0-auto{
+    margin: 0 auto;
+}
+
+.f-wrap{
+    flex-wrap: wrap;
+}
+
+.w-30{
+    width: 30%;
+}
+
+.w-70{
+    width: 70%;
+}
+
+.w-100{
+    width: 100%;
+}
+
+
 
 /* HEADER */
 header{
-    
+
     /* debug */
     background-color: #FF7A00;
     height: 100px;
 }
 
 .menu{
-    display: flex;
     justify-content: space-between;
 
     /* debug */
@@ -30,13 +69,54 @@ header{
 }
 
 .menu-col{
-    width: calc(100% / 3);
 
     /* debug */
     background-color: #FF0000;
     height: 100%;
 }
 
+
+
+/* HERO */
+.hero{
+
+    /* debug */
+    background-color: yellow;
+    height: 400px;
+}
+
+/* HERO CONTAINER */
+.hero-col{
+
+    /* debug */
+    border: 1px solid black;
+}
+
+/* HERO COLUMNS */
+.hero-col:first-child{
+    height: 50%;
+
+    /* debug */
+    background-color: #BDFF00;
+}
+
+.hero-col:last-child{
+    height: 50%;
+
+    /* debug */
+    background-color: #8EB800;
+}
+
+div .hero-col:nth-child(2){
+    height: 50%;
+
+    /* debug */
+    background-color: #AADD00;
+}
+
+
+
 /* MAIN */
+
 
 /* FOOTER */
