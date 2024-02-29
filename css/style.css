@@ -6,3 +6,37 @@
     box-sizing: border-box;
 }
 
+
+/* COMMON */
+
+/* UTILITIES */
+
+/* HEADER */
+header{
+    
+    /* debug */
+    background-color: #FF7A00;
+    height: 100px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+
+    /* debug */
+    background-color: #C75F00;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-col{
+    width: calc(100% / 3);
+
+    /* debug */
+    background-color: #FF0000;
+    height: 100%;
+}
+
+/* MAIN */
+
+/* FOOTER */
