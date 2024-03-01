@@ -6,7 +6,16 @@
     box-sizing: border-box;
 }
 
+ul{
+    list-style-type: none;
+    color: inherit;
+}
 
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
 
 /* COMMON */
 
@@ -23,10 +32,11 @@
 
 .large-container{   
     width: 70%;
+    max-width: 1200px;
 
     /* debug */
     background-color: #9A9631;
-    height: 100%;
+    /* height: 100%; */
 }
 
 .m-0-auto{
@@ -53,8 +63,13 @@
     width: 100%;
 }
 
-.standard{
+.h-100{
+    height: 100%;
+}
+
+.standard-container{
     width: 50%;
+    max-width: 1000px;
 
     /* debug */
     background-color: #FFBFBF;
@@ -74,36 +89,31 @@
 
 /* HEADER */
 header{
+    height: 100px;
+    line-height: 100px;
 
     /* debug */
     background-color: #FF7A00;
-    height: 100px;
+
 }
 
-.menu{
+header nav{
     justify-content: space-between;
-
-    /* debug */
-    background-color: #C75F00;
-    width: 100%;
-    height: 100%;
 }
 
-.menu-col{
-
-    /* debug */
-    background-color: #FF0000;
-    height: 100%;
+nav ul{
+    gap: 20px;
 }
+
 
 
 
 /* HERO */
 .hero{
+    background-color: #B4D0E7;
 
     /* debug */
-    background-color: yellow;
-    height: 400px;
+    /* height: 400px; */
 }
 
 /* HERO CONTAINER */
@@ -111,29 +121,11 @@ header{
 
     /* debug */
     border: 1px solid black;
+    min-height: 200px;
 }
 
-/* HERO COLUMNS */
-.hero-col:first-child{
-    height: 50%;
 
-    /* debug */
-    background-color: #BDFF00;
-}
 
-.hero-col:last-child{
-    height: 50%;
-
-    /* debug */
-    background-color: #8EB800;
-}
-
-div .hero-col:nth-child(2){
-    height: 50%;
-
-    /* debug */
-    background-color: #AADD00;
-}
 
 
 
@@ -178,8 +170,8 @@ main{
 }
 
 
-/* CLIENTS SECTION */
-.clients{
+/* TEAMS SECTION */
+.teams{
 
     /* debug */
     background-color: white;
@@ -211,7 +203,6 @@ footer{
 }
 
 .foot-col{
-    
 
     /* debug */
     height: 70%;
