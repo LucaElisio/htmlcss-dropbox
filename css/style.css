@@ -22,12 +22,16 @@ img{
 
 /* COMMON */
 
+section{
+    padding: 40px 0px;
+}
+
 .large-container{   
     width: 70%;
     max-width: 1200px;
 
     /* debug */
-    background-color: #9A9631;
+    /* background-color: #9A9631; */
     /* height: 100%; */
 }
 
@@ -105,6 +109,14 @@ img{
     color: white;
 }
 
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+}
+
 
 /* HEADER */
 header{
@@ -124,15 +136,26 @@ nav ul{
 
 
 /* HERO */
-
-/* HERO CONTAINER */
 .hero-col{
-
-    /* debug */
-    border: 1px solid black;
-    min-height: 200px;
+    padding-top: 30px;
 }
 
+.hero-col *{
+    display: block;
+    margin-top: 30px;
+}
+
+
+/* HERO CONTAINER */
+h1{
+    padding-top: 30px;
+    font-size: 5rem;
+}
+
+#row-down{
+    font-size: 40px;
+    display: block;
+}
 
 
 /* MAIN */
