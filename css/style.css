@@ -22,6 +22,10 @@ img{
 
 /* COMMON */
 
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 section{
     padding: 40px 0px;
 }
@@ -40,8 +44,7 @@ section{
     max-width: 1000px;
 
     /* debug */
-    background-color: #FFBFBF;
-    height: 100%;
+
 }
 
 .bg{
@@ -96,8 +99,6 @@ section{
 }
 
 .p-10{
-
-    /* debug */
     padding: 10px;
 }
 
@@ -109,6 +110,9 @@ section{
     color: white;
 }
 
+.c-blue{
+    color: #0061FF;
+}
 .relative{
     position: relative;
 }
@@ -116,6 +120,7 @@ section{
 .absolute{
     position: absolute;
 }
+
 
 
 /* HEADER */
@@ -159,20 +164,59 @@ h1{
 
 
 /* MAIN */
-main{
 
-    /* debug */
-    background-color: rgb(92, 92, 255);
-    /* height: 1000px; */
+/* PLANS SECTION */
+
+#plans-section h2{
+    padding-top: 100px;
+    font-size: 2rem;
 }
 
 .main-col.w-33{
+    border: 1px solid #d3d3d3;
 
     /* debug */
-    background-color: #D9D9D9;
+    /* background-color: #D9D9D9; */
     min-height: 400px;
-    border: 1px solid black;
 }
+
+.type{
+    text-align: center;
+}
+
+.body-card{
+    padding: 20px;
+}
+
+.card-title *{
+    display: block;
+    margin-top: 15px;
+}
+
+.card-desc{
+    padding-top: 20px;
+}
+
+.card-desc li{
+    padding-top: 20px;
+    line-height: 20px;
+    gap: 10px;
+}
+
+.body-card div:nth-child(3){
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.body-card button{
+    padding: 10px 30px;
+}
+
+.body-card a{
+    color: blue;
+    text-decoration: underline;
+}
+
 
 .main-col.w-60{
 
@@ -198,6 +242,14 @@ main{
     border: 1px solid black;
 }
 
+.card-large-hr{
+    border: 1px solid azure;
+}
+
+.card-small-hr{
+    margin-top: 40px;
+    width: 30%;
+}
 
 /* TEAMS SECTION */
 .teams{
