@@ -19,7 +19,27 @@ a{
 
 /* COMMON */
 
+.large-container{   
+    width: 70%;
+    max-width: 1200px;
 
+    /* debug */
+    background-color: #9A9631;
+    /* height: 100%; */
+}
+
+.standard-container{
+    width: 50%;
+    max-width: 1000px;
+
+    /* debug */
+    background-color: #FFBFBF;
+    height: 100%;
+}
+
+.bg{
+    background-color: #B4D0E7;
+}
 
 /* UTILITIES */
 .flex-container{
@@ -28,15 +48,6 @@ a{
 
 .w-33{
     width: calc(100% / 3);
-}
-
-.large-container{   
-    width: 70%;
-    max-width: 1200px;
-
-    /* debug */
-    background-color: #9A9631;
-    /* height: 100%; */
 }
 
 .m-0-auto{
@@ -67,14 +78,7 @@ a{
     height: 100%;
 }
 
-.standard-container{
-    width: 50%;
-    max-width: 1000px;
 
-    /* debug */
-    background-color: #FFBFBF;
-    height: 100%;
-}
 
 .p-10{
 
@@ -106,15 +110,7 @@ nav ul{
 }
 
 
-
-
 /* HERO */
-.hero{
-    background-color: #B4D0E7;
-
-    /* debug */
-    /* height: 400px; */
-}
 
 /* HERO CONTAINER */
 .hero-col{
@@ -126,9 +122,6 @@ nav ul{
 
 
 
-
-
-
 /* MAIN */
 main{
 
@@ -137,19 +130,11 @@ main{
     /* height: 1000px; */
 }
 
-.main-col.w-100{
-
-    /* debug */
-    background-color: #00FFC2;
-    height: 100px;
-    border: 1px solid black;
-}
-
 .main-col.w-33{
 
     /* debug */
     background-color: #D9D9D9;
-    height: 400px;
+    min-height: 400px;
     border: 1px solid black;
 }
 
@@ -157,7 +142,7 @@ main{
 
     /* debug */
     background-color: #8D3B3B;
-    height: 300px;
+    min-height: 300px;
     border: 1px solid black;
 }
 
@@ -165,7 +150,15 @@ main{
 
     /* debug */
     background-color: #6F0000;
-    height: 300px;
+    min-height: 300px;
+    border: 1px solid black;
+}
+
+.main-col.w-100{
+
+    /* debug */
+    background-color: #D9D9D9;
+    min-height: 300px;
     border: 1px solid black;
 }
 
@@ -198,22 +191,14 @@ main{
 footer{
 
     /* debug */
-    height: 300px;
     background-color: black;
 }
 
 .foot-col{
 
     /* debug */
-    height: 70%;
+    min-height: 200px;
     background-color: #FF00C7;
     border: 1px solid white;
 }
 
-.foot-col.w-100{
-    
-    /* debug */
-    background-color: #00FFC2;
-    height: 30%;
-    border: 1px solid black;
-}
