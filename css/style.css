@@ -334,16 +334,24 @@ h1{
 
 /* FOOTER */
 footer{
+    color: white;
 
     /* debug */
     background-color: black;
 }
 
 .foot-col{
-
-    /* debug */
-    min-height: 200px;
-    background-color: #FF00C7;
-    border: 1px solid white;
+    padding: 40px;
 }
 
+.foot-col ul{
+    padding-top: 10px;
+}
+
+.foot-col li{
+    padding-top: 15px;
+}
+
+.foot-col.w-100{
+    color: grey;
+}
