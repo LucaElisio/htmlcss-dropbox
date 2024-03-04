@@ -139,6 +139,10 @@ section{
     padding-top: 20px;
 }
 
+.p-40{
+    padding: 40px;
+}
+
 /* HEADER */
 header{
 
@@ -266,27 +270,33 @@ h1{
 
 
 /* TEAMS SECTION */
-.teams{
+#teams-section h2{
+    padding-bottom: 60px;
+}
 
-    /* debug */
-    background-color: white;
-
+#teams-section a{
+    display: inline-block;
+    padding-bottom: 40px;
+    color: blue;
+    text-decoration: underline;
 }
 
 /* responsive square */
 .square{
     width: 50%;
-
-    /* debug */
-    background-color: #093385;
-    border: 1px solid white;
+    aspect-ratio: 1 / 1;
+    align-items: center;
 }
 
-.square:after{
-    content: "";
-    display: block;
-    padding-bottom: 100%;
+.square.middle{
+    background-color: #F5F5F5;
 }
+
+.square.middle img{
+    width: 50%;
+    margin: 40px 0 0 40px;
+}
+
 
 
 /* FOOTER */
