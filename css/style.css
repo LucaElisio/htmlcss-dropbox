@@ -270,6 +270,11 @@ h1{
 
 
 /* TEAMS SECTION */
+
+#teams-section{
+    padding-bottom: 0;
+}
+
 #teams-section h2{
     padding-bottom: 60px;
 }
@@ -297,6 +302,22 @@ h1{
     margin: 40px 0 0 40px;
 }
 
+
+/* QTA SECTION */
+
+
+#qta-section .flex-container{
+    padding: 40px 0px;
+    justify-content: space-between;
+}
+
+#qta-section button{
+    border: 0;
+}
+
+#qta-section h2{
+    color: #610c32;
+}
 
 
 /* FOOTER */
