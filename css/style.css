@@ -319,6 +319,18 @@ h1{
     color: #610c32;
 }
 
+/* FAQ SECTION */
+
+#faq-section{
+    padding: 100px 0px;
+}
+
+.faq{
+    justify-content: space-between;
+    padding: 20px 0px;
+    border-bottom: 1px solid black;
+}
+
 
 /* FOOTER */
 footer{
