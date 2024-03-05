@@ -1,36 +1,55 @@
-
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-ul{
+ul {
     list-style-type: none;
     color: inherit;
 }
 
-a{
+a {
+    padding-bottom: 5px;
+    position: relative;
     text-decoration: none;
     color: inherit;
 }
 
-img{
+a::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: blue;
+    transform-origin: top left;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+img {
     max-width: 100%;
 }
 
 /* COMMON */
 
-body{
+body {
     font-family: 'Open Sans', sans-serif;
 }
 
-section{
+section {
     padding: 40px 0px;
 }
 
-.large-container{   
+h2 {
+    font-size: 2rem;
+}
+
+.large-container {
     width: 70%;
     max-width: 1200px;
 
@@ -39,7 +58,7 @@ section{
     /* height: 100%; */
 }
 
-.standard-container{
+.standard-container {
     width: 50%;
     max-width: 1000px;
 
@@ -47,112 +66,114 @@ section{
 
 }
 
-.bg{
+.bg {
     background-color: #B4D0E7;
 }
 
-.btn{
+.btn {
     border: 0;
     padding: 8px 15px;
     cursor: pointer;
 }
 
-.primary{
+.primary {
     background-color: #0061FF;
 }
 
-.secondary{
+.secondary {
     background-color: white;
     border: 1px solid black;
 }
 
 /* UTILITIES */
-.flex-container{
+.flex-container {
     display: flex;
 }
 
-.w-33{
+.w-33 {
     width: calc(100% / 3);
 }
 
-.m-0-auto{
+.m-0-auto {
     margin: 0 auto;
 }
 
-.f-wrap{
+.f-wrap {
     flex-wrap: wrap;
 }
 
-.w-20{
+.w-20 {
     width: 20%;
 }
 
-.w-40{
+.w-40 {
     width: 40%;
 }
 
-.w-60{
+.w-60 {
     width: 60%;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
-.h-100{
+.h-100 {
     height: 100%;
 }
 
-.p-10{
+.p-10 {
     padding: 10px;
 }
 
-.no-stretch{
+.no-stretch {
     align-content: flex-start;
 }
 
-.c-white{
+.c-white {
     color: white;
 }
 
-.c-blue{
+.c-blue {
     color: #0061FF;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.absolute{
+.absolute {
     position: absolute;
 }
 
-.inline-block{
+.inline-block {
     display: inline-block;
 }
 
-.m-top{
+.m-top {
     margin-top: 50px;
 }
 
-.p-top-20{
+.p-top-20 {
     padding-top: 20px;
 }
 
-.p-40{
+.p-40 {
     padding: 40px;
 }
 
 /* HEADER */
-header{
 
+/* Animated Underline */
+.animated:hover::before {
+    transform: scaleX(1);
 }
 
-header nav{
+header nav {
     justify-content: space-between;
 }
 
-nav ul{
+nav ul {
     padding: 15px;
     align-items: center;
     gap: 20px;
@@ -161,23 +182,23 @@ nav ul{
 
 
 /* HERO */
-.hero-col{
+.hero-col {
     padding-top: 30px;
 }
 
-.hero-col *{
+.hero-col * {
     display: block;
     margin-top: 30px;
 }
 
 
 /* HERO CONTAINER */
-h1{
+h1 {
     padding-top: 30px;
     font-size: 5rem;
 }
 
-#row-down{
+#row-down {
     font-size: 40px;
     display: block;
 }
@@ -187,80 +208,149 @@ h1{
 
 /* PLANS SECTION */
 
-#plans-section h2{
-    padding: 100px 0px 50px 0px;
-    font-size: 2rem;
+/* Styling Radio Button */
+
+/* Customize the label (the container) */
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-right: 40px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-.plans{
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmark {
+    background-color: #0061FF;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+
+#plans-section h2 {
+    padding: 100px 0px 50px 0px;
+}
+
+.plans {
     padding-top: 40px;
     gap: 30px;
 }
 
-#plans-section .main-col{
+#plans-section .main-col {
     border: 1px solid #d3d3d3;
 }
 
-.type{
+.type {
     text-align: center;
 }
 
-.body-card{
+.body-card {
     padding: 20px;
 }
 
-.card-title *{
+.card-title * {
     display: block;
     margin-top: 15px;
 }
 
-.card-desc{
+.card-desc {
     padding-top: 20px;
 }
 
-.card-desc li{
+.card-desc li {
     padding-top: 20px;
     line-height: 20px;
     gap: 10px;
 }
 
 
-.body-card div:nth-child(3){
+.body-card div:nth-child(3) {
     padding: 20px 0px;
     text-align: center;
 }
 
-.body-card button{
+.body-card button {
     padding: 10px 30px;
 }
 
-.body-card a{
+.body-card a {
     color: blue;
     text-decoration: underline;
 }
 
-.office{
+.office {
     margin: 0;
     top: 0;
     right: 0;
 }
 
-.card-large-hr{
+.card-large-hr {
     border: 1px solid azure;
 }
 
-.card-small-hr{
+.card-small-hr {
     margin-top: 40px;
     width: 30%;
 }
 
 /* PARTNER SECTION */
 
-#partner-section .w-40{
+#partner-section .w-40 {
     padding: 50px;
 }
 
-#partner-section button{
+#partner-section button {
     margin-top: 20px;
 }
 
@@ -271,15 +361,15 @@ h1{
 
 /* TEAMS SECTION */
 
-#teams-section{
+#teams-section {
     padding-bottom: 0;
 }
 
-#teams-section h2{
+#teams-section h2 {
     padding-bottom: 60px;
 }
 
-#teams-section a{
+#teams-section a {
     display: inline-block;
     padding-bottom: 40px;
     color: blue;
@@ -287,17 +377,17 @@ h1{
 }
 
 /* responsive square */
-.square{
+.square {
     width: 50%;
     aspect-ratio: 1 / 1;
     align-items: center;
 }
 
-.square.middle{
+.square.middle {
     background-color: #F5F5F5;
 }
 
-.square.middle img{
+.square.middle img {
     width: 50%;
     margin: 40px 0 0 40px;
 }
@@ -306,26 +396,26 @@ h1{
 /* QTA SECTION */
 
 
-#qta-section .flex-container{
+#qta-section .flex-container {
     padding: 40px 0px;
     justify-content: space-between;
 }
 
-#qta-section button{
+#qta-section button {
     border: 0;
 }
 
-#qta-section h2{
+#qta-section h2 {
     color: #610c32;
 }
 
 /* FAQ SECTION */
 
-#faq-section{
+#faq-section {
     padding: 100px 0px;
 }
 
-.faq{
+.faq {
     justify-content: space-between;
     padding: 20px 0px;
     border-bottom: 1px solid black;
@@ -333,25 +423,25 @@ h1{
 
 
 /* FOOTER */
-footer{
+footer {
     color: white;
 
     /* debug */
     background-color: black;
 }
 
-.foot-col{
+.foot-col {
     padding: 40px;
 }
 
-.foot-col ul{
+.foot-col ul {
     padding-top: 10px;
 }
 
-.foot-col li{
+.foot-col li {
     padding-top: 15px;
 }
 
-.foot-col.w-100{
+.foot-col.w-100 {
     color: grey;
 }
